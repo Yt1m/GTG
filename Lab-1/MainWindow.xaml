@@ -1,0 +1,29 @@
+﻿<Window x:Class="NormCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Norm Calculator" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock Text="Комплексные числа" FontWeight="Bold" Margin="0 0 0 9"/>
+            <TextBox x:Name="ComplexRealPart" Text="0" Margin="0 0 0 5"/>
+            <TextBox x:Name="ComplexImaginaryPart" Text="0" Margin="0 0 0 5"/>
+            <Button Content="Вычислить норму комплексного числа" Click="CalculateComplexNorm_Click" Margin="0 10 0 0"/>
+           
+
+            <TextBlock x:Name="ComplexNormResult" Text="" Margin="0 10 0 0"/>
+        </StackPanel>
+
+
+        <StackPanel Margin="20" Grid.Column="1">
+            <TextBlock Text="3D Vector:" FontWeight="Bold" Margin="0 150 0 10"/>
+            <TextBox x:Name="VectorX" Text="0" Margin="0 0 0 5"/>
+            <TextBox x:Name="VectorY" Text="0" Margin="0 0 0 5"/>
+            <TextBox x:Name="VectorZ" Text="0" Margin="0 0 0 5"/>
+            <Button Content="Вычислить норму вектора" Click="CalculateVectorNorm_Click" Margin="0 10 0 0"/>
+            <TextBlock x:Name="VectorNormResult" Text="" Margin="0 10 0 0"/>
+        </StackPanel>
+    </Grid>
+</Window>
