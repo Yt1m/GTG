@@ -1,0 +1,19 @@
+﻿<Window x:Class="YourNamespace.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Интерфейс товара" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <TextBox x:Name="NameTextBox" Text="Наименование товара"/>
+            <TextBox x:Name="DateTextBox" Text="Дата"/>
+            <TextBox x:Name="PriceTextBox" Text="Цена"/>
+            <TextBox x:Name="QuantityTextBox" Text="Количество"/>
+            <TextBox x:Name="InvoiceTextBox" Text="Номер накладной"/>
+
+            <Button Content="Изменить цену" Click="ChangePrice_Click"/>
+            <Button Content="Изменить количество" Click="ChangeQuantity_Click"/>
+            <Button Content="Вычислить общую стоимость" Click="CalculateTotalPrice_Click"/>
+            <TextBlock x:Name="ResultTextBlock"/>
+        </StackPanel>
+    </Grid>
+</Window>
