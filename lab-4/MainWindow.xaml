@@ -1,0 +1,28 @@
+﻿<!-- MainWindow.xaml -->
+<Window x:Class="AeroflotApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Приложение Аэрофлот" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="5">
+            <TextBlock Text="Введите тип самолета:" VerticalAlignment="Center"/>
+            <TextBox x:Name="txtAirplaneType" Width="150" Margin="5"/>
+            <Button Content="Поиск" Click="SearchFlights_Click" Margin="5"/>
+        </StackPanel>
+        <ListBox x:Name="lstFlights" Grid.Row="1" Margin="5">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Destination}" Width="200"/>
+                        <TextBlock Text="{Binding FlightNumber}" Width="100"/>
+                        <TextBlock Text="{Binding AirplaneType}" Width="150"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>
