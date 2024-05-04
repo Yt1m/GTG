@@ -1,0 +1,17 @@
+﻿<Window x:Class="ArrayOperations.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Операции с Массивами" Height="300" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBlock Text="Введите числа:" Margin="10" />
+        <TextBox x:Name="Memo" TextWrapping="Wrap" AcceptsReturn="True" Margin="10" VerticalScrollBarVisibility="Auto" Grid.Row="1"/>
+        <Button x:Name="CalculateButton" Content="Вычислить" Click="CalculateButton_Click" Margin="10" Grid.Row="2" Width="100" Height="30"/>
+        <TextBlock x:Name="ResultLabel" Margin="10" Grid.Row="3"/>
+    </Grid>
+</Window>
