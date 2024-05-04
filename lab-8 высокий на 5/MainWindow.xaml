@@ -1,0 +1,9 @@
+﻿<Window x:Class="CircularDoublyLinkedList.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Циклический Двусвязный Список" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="CreateListButton" Content="Создать список" HorizontalAlignment="Left" Margin="50,50,0,0" VerticalAlignment="Top" Width="100" Click="CreateListButton_Click"/>
+        <TextBox x:Name="ResultTextBox" HorizontalAlignment="Left" Height="300" Margin="50,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="700" IsReadOnly="True"/>
+    </Grid>
+</Window>
