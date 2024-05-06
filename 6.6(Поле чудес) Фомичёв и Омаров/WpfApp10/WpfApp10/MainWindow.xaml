@@ -1,0 +1,10 @@
+﻿<Window x:Class="WheelOfFortuneClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Клиент 'Поле чудес'" Height="350" Width="525">
+    <Grid>
+        <TextBlock x:Name="SecretWordTextBlock" HorizontalAlignment="Center" Margin="10" TextWrapping="Wrap" Text="Слово здесь" VerticalAlignment="Top" Height="100" Width="200"/>
+        <TextBox x:Name="GuessTextBox" HorizontalAlignment="Center" Margin="10,120,10,0" VerticalAlignment="Top" Width="200"/>
+        <Button Content="Угадать" HorizontalAlignment="Center" Margin="10,160,10,0" VerticalAlignment="Top" Width="200" Click="GuessButton_Click"/>
+    </Grid>
+</Window>
